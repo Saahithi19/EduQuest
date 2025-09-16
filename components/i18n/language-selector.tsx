@@ -21,11 +21,6 @@ export function LanguageSelector({ variant = "dropdown", showLabel = true }: Lan
   const handleLanguageChange = (newLanguage: Language) => {
     setLanguage(newLanguage)
     setIsOpen(false)
-
-    // Trigger page reload to apply language changes
-    if (typeof window !== "undefined") {
-      window.location.reload()
-    }
   }
 
   if (variant === "select") {

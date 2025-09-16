@@ -23,11 +23,17 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
     i18n.initialize()
     setLanguageState(i18n.getLanguage())
     setIsLoading(false)
+
+    const handleLanguageChange = (newLanguage: Language) => {
+      setLanguageState(newLanguage)
+    }
+
+    i18n.addListener(handleLanguageChange)
+    return () => i18n.removeListener(handleLanguageChange)
   }, [])
 
   const setLanguage = (newLanguage: Language) => {
     i18n.setLanguage(newLanguage)
-    setLanguageState(newLanguage)
   }
 
   const t = (key: string, params?: Record<string, string | number>) => {

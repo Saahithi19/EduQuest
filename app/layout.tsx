@@ -4,6 +4,7 @@ import { Space_Grotesk } from "next/font/google"
 import "./globals.css"
 import { I18nProvider } from "@/components/i18n/i18n-provider"
 import { AccessibilityToolbar } from "@/components/accessibility/accessibility-toolbar"
+import { DynamicHtmlLang } from "@/components/i18n/dynamic-html-lang"
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -44,7 +45,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${spaceGrotesk.variable} antialiased`}>
+    <html lang="en" className={`${spaceGrotesk.variable} antialiased`} suppressHydrationWarning>
       <head>
         <meta name="application-name" content="STEM Gamify" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -63,6 +64,7 @@ export default function RootLayout({
       </head>
       <body className="font-sans" style={{ fontFamily: "var(--font-space-grotesk)" }}>
         <I18nProvider>
+          <DynamicHtmlLang />
           <AccessibilityToolbar />
           <main id="main-content">{children}</main>
         </I18nProvider>

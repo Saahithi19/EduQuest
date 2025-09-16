@@ -1,3 +1,5 @@
+"use client"
+
 export type Language = "en" | "hi" | "ta"
 
 export interface Translation {
@@ -471,7 +473,7 @@ const translations: Record<Language, Translation> = {
       levelUp: "स्तर बढ़ा!",
       badgeEarned: "बैज अर्जित!",
       streakMaintained: "लगातार बनाए रखा!",
-      newAchievement: "नई उपलब्धि!",
+      newAchievement: "पுதிய उपलब्धि!",
       pointsEarned: "अंक अर्जित!",
       keepGoing: "जारी रखें!",
       almostThere: "लगभग पहुंच गए!",
@@ -492,66 +494,66 @@ const translations: Record<Language, Translation> = {
       completion: "पूर्णता",
       averageScore: "औसत स्कोर",
       totalTime: "कुल समय",
-      lessonsCompleted: "पूरे किए गए पाठ",
-      quizzesCompleted: "पूरी की गई प्रश्नोत्तरी",
-      activeStudents: "सक्रिय छात्र",
-      topPerformers: "शीर्ष प्रदर्शनकर्ता",
-      needsSupport: "सहायता की आवश्यकता",
-      subjectPerformance: "विषय प्रदर्शन",
-      weeklyActivity: "साप्ताहिक गतिविधि",
-      monthlyProgress: "मासिक प्रगति",
-      generateReport: "रिपोर्ट जेनरेट करें",
-      exportData: "डेटा निर्यात करें",
-      viewDetails: "विवरण देखें",
+      lessonsCompleted: "मுடிக்கப்பட்ட பாடங்கள்",
+      quizzesCompleted: "முடிக்கப்பட்ட வினாடி வினாக்கள்",
+      activeStudents: "செயலில் உள்ள மாணவர்கள்",
+      topPerformers: "சிறந்த செயல்பாட்டாளர்கள்",
+      needsSupport: "ஆதரவு தேவை",
+      subjectPerformance: "பாட செயல்திறன்",
+      weeklyActivity: "வாராந்திர செயல்பாடு",
+      monthlyProgress: "மாதாந்திர முன்னேற்றம்",
+      generateReport: "அறிக்கையை உருவாக்கு",
+      exportData: "தரவை ஏற்றுமதி செய்",
+      viewDetails: "விவரங்களைப் பார்",
     },
     accessibility: {
-      skipToContent: "मुख्य सामग्री पर जाएं",
-      openMenu: "मेनू खोलें",
-      closeMenu: "मेनू बंद करें",
-      toggleTheme: "थीम बदलें",
-      increaseTextSize: "टेक्स्ट का आकार बढ़ाएं",
-      decreaseTextSize: "टेक्स्ट का आकार घटाएं",
-      highContrast: "उच्च कंट्रास्ट मोड",
-      screenReader: "स्क्रीन रीडर मोड",
-      keyboardNavigation: "कीबोर्ड नेवीगेशन",
-      altText: "वैकल्पिक टेक्स्ट",
-      ariaLabel: "सुलभ लेबल",
-      expandSection: "अनुभाग वிஸ्तृत करें",
-      collapseSection: "अनुभाग संकुचित करें",
-      currentPage: "वर्तमान पृष्ठ",
-      pageOf: "पृष्ठ {current} का {total}",
-      sortBy: "इसके द्वारा क्रमबद्ध करें",
-      filterBy: "इसके द्वारा फ़िल्टर करें",
+      skipToContent: "முக்கிய உள்ளடக்கத்திற்கு செல்",
+      openMenu: "மெனுவைத் திற",
+      closeMenu: "மெனுவை மூடு",
+      toggleTheme: "தீமை மாற்று",
+      increaseTextSize: "உரை அளவை அதிகரி",
+      decreaseTextSize: "உரை அளவைக் குறை",
+      highContrast: "உயர் மாறுபாடு பயன்முறை",
+      screenReader: "திரை வாசகர் பயன்முறை",
+      keyboardNavigation: "விசைப்பலகை வழிசெலுத்தல்",
+      altText: "மாற்று உரை",
+      ariaLabel: "அணுகக்கூடிய லேபிள்",
+      expandSection: "பிரிவை விரிவாக்கு",
+      collapseSection: "பிரிவைச் சுருக்கு",
+      currentPage: "தற்போதைய பக்கம்",
+      pageOf: "பக்கம் {current} இன் {total}",
+      sortBy: "இதன் மூலம் வரிசைப்படுத்து",
+      filterBy: "இதன் மூலம் வடிகட்டு",
     },
     offline: {
-      offline: "ऑफ़लाइन",
-      online: "ऑनलाइन",
-      syncPending: "सिंक लंबित",
-      syncComplete: "सिंक पूर्ण",
-      downloadContent: "सामग्री डाउनलोड करें",
-      offlineMode: "ऑफ़लाइन मोड",
-      connectionLost: "कनेक्शन खो गया",
-      connectionRestored: "कनेक्शन बहाल",
-      dataWillSync: "ऑनलाइन होने पर डेटा सिंक होगा",
-      workingOffline: "ऑफ़लाइन काम कर रहे हैं",
-      downloadForOffline: "ऑफ़लाइन उपயोग के लिए डाउनलोड करें",
-      offlineContentReady: "ऑफ़लाइन सामग्री तैयार",
+      offline: "ஆஃப்லைன்",
+      online: "ஆன்லைன்",
+      syncPending: "ஒத்திசைவு நிலுவையில்",
+      syncComplete: "ஒத்திசைவு முடிந்தது",
+      downloadContent: "உள்ளடக்கத்தைப் பதிவிறக்கு",
+      offlineMode: "ஆஃப்லைன் பயன்முறை",
+      connectionLost: "இணைப்பு இழந்தது",
+      connectionRestored: "இணைப்பு மீட்டமைக்கப்பட்டது",
+      dataWillSync: "ஆன்லைனில் இருக்கும்போது தரவு ஒத்திசைக்கும்",
+      workingOffline: "ஆஃப்லைனில் வேலை செய்கிறது",
+      downloadForOffline: "ஆஃப்லைன் பயன்பாட்டிற்காக பதிவிறக்கு",
+      offlineContentReady: "ஆஃப்லைன் உள்ளடக்கம் தயார்",
     },
     errors: {
-      somethingWentWrong: "कुछ गलत हुआ",
-      pageNotFound: "पृष्ठ नहीं मिला",
-      accessDenied: "पहुंच अस्वीकृत",
-      networkError: "नेटवर्क त्रुटि",
-      validationError: "सत्यापन त्रुटि",
-      serverError: "सर्वर त्रुटि",
-      tryAgainLater: "कृपया बाद में पुनः प्रयास करें",
-      contactSupport: "सहायता से संपर्क करें",
-      invalidCredentials: "अमान्य क्रेडेंशियल",
-      accountLocked: "खाता लॉक",
-      sessionExpired: "सत्र समाप्त",
-      fileUploadError: "फ़ाइल अपलोड त्रुटि",
-      fileTooLarge: "फ़ाइल बहुत बड़ी",
-      unsupportedFileType: "असमर्थित फ़ाइल प्रकार",
+      somethingWentWrong: "ஏதோ தவறு நடந்தது",
+      pageNotFound: "பக்கம் கிடைக்கவில்லை",
+      accessDenied: "அணுகல் மறுக்கப்பட்டது",
+      networkError: "நெட்வொர்க் பிழை",
+      validationError: "சரிபார்ப்பு பிழை",
+      serverError: "சர்வர் பிழை",
+      tryAgainLater: "தயவுசெய்து பின்னர் மீண்டும் முயற்சிக்கவும்",
+      contactSupport: "ஆதரவைத் தொடர்பு கொள்ளவும்",
+      invalidCredentials: "தவறான சான்றுகள்",
+      accountLocked: "கணக்கு பூட்டப்பட்டது",
+      sessionExpired: "அமர்வு காலாவதியானது",
+      fileUploadError: "கோப்பு பதிவேற்ற பிழை",
+      fileTooLarge: "கோப்பு மிகப் பெரியது",
+      unsupportedFileType: "ஆதரிக்கப்படாத கோப்பு வகை",
     },
   },
   ta: {
@@ -735,10 +737,13 @@ const translations: Record<Language, Translation> = {
   },
 }
 
+import { useState, useEffect } from "react"
+
 class I18nService {
   private static instance: I18nService
   private currentLanguage: Language = "en"
   private translations = translations
+  private listeners: Array<(language: Language) => void> = []
 
   static getInstance(): I18nService {
     if (!I18nService.instance) {
@@ -747,16 +752,28 @@ class I18nService {
     return I18nService.instance
   }
 
+  addListener(listener: (language: Language) => void): void {
+    this.listeners.push(listener)
+  }
+
+  removeListener(listener: (language: Language) => void): void {
+    this.listeners = this.listeners.filter((l) => l !== listener)
+  }
+
+  private notifyListeners(): void {
+    this.listeners.forEach((listener) => listener(this.currentLanguage))
+  }
+
   setLanguage(language: Language): void {
     this.currentLanguage = language
     if (typeof window !== "undefined") {
       localStorage.setItem("preferred-language", language)
       document.documentElement.lang = language
 
-      // Update text direction for RTL languages if needed
       const rtlLanguages: Language[] = [] // Add RTL languages if needed
       document.documentElement.dir = rtlLanguages.includes(language) ? "rtl" : "ltr"
     }
+    this.notifyListeners()
   }
 
   getLanguage(): Language {
@@ -779,13 +796,12 @@ class I18nService {
       if (value && typeof value === "object" && k in value) {
         value = value[k]
       } else {
-        // Fallback to English if translation not found
         value = this.translations.en
         for (const fallbackKey of keys) {
           if (value && typeof value === "object" && fallbackKey in value) {
             value = value[fallbackKey]
           } else {
-            return key // Return key if no translation found
+            return key
           }
         }
         break
@@ -796,7 +812,6 @@ class I18nService {
       return key
     }
 
-    // Replace parameters in the translation
     if (params) {
       return value.replace(/\{(\w+)\}/g, (match, paramKey) => {
         return params[paramKey]?.toString() || match
@@ -806,7 +821,6 @@ class I18nService {
     return value
   }
 
-  // Initialize language from localStorage or browser preference
   initialize(): void {
     if (typeof window === "undefined") return
 
@@ -816,7 +830,6 @@ class I18nService {
       return
     }
 
-    // Detect browser language
     const browserLanguage = navigator.language.split("-")[0] as Language
     if (this.translations[browserLanguage]) {
       this.setLanguage(browserLanguage)
@@ -826,11 +839,21 @@ class I18nService {
 
 export const i18n = I18nService.getInstance()
 
-// React hook for using translations
 export function useTranslation() {
+  const [currentLanguage, setCurrentLanguage] = useState<Language>(i18n.getLanguage())
+
+  useEffect(() => {
+    const handleLanguageChange = (language: Language) => {
+      setCurrentLanguage(language)
+    }
+
+    i18n.addListener(handleLanguageChange)
+    return () => i18n.removeListener(handleLanguageChange)
+  }, [])
+
   return {
     t: (key: string, params?: Record<string, string | number>) => i18n.t(key, params),
-    language: i18n.getLanguage(),
+    language: currentLanguage,
     setLanguage: (language: Language) => i18n.setLanguage(language),
     availableLanguages: i18n.getAvailableLanguages(),
   }
